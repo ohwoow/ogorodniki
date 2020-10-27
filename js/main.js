@@ -32,6 +32,10 @@ mapItems.forEach(item => {
     if (e.target.classList.contains('map-pins__close')) {
       card.classList.remove('open')
     }
+
+    if (item.offsetTop < 400) {
+      card.style.bottom = '0'
+    }
   })
 })
 

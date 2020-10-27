@@ -98,7 +98,35 @@
 
   &__img {
     height: 125px;
-    background: url('../image/photo-shop-modal.jpg') center no-repeat;
+    background-image: url('../image/shop-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &_2 {
+      background-image: url('../image/shop-2.jpg');
+    }
+    &_3 {
+      background-image: url('../image/shop-3.jpg');
+    }
+    &_4 {
+      background-image: url('../image/shop-4.jpg');
+    }
+    &_5 {
+      background-image: url('../image/shop-5.jpg');
+    }
+    &_6 {
+      background-image: url('../image/shop-6.jpeg');
+    }
+    &_7 {
+      background-image: url('../image/shop-7.jpg');
+    }
+    &_8 {
+      background-image: url('../image/shop-8.jpg');
+    }
+    &_9 {
+      background-image: url('../image/shop-9.jpg');
+    }
   }
 
   &__descr {
@@ -137,6 +165,10 @@
   display: block;
 }
 
+.map-pins__card:first-child {
+  display: none;
+}
+
 .map-pins__card.hide {
   display: none;
 }
@@ -153,4 +185,8 @@
   background-size: 25px 25px;
   box-shadow: 0 10px 20px rgba(#000000, 0.6);
   cursor: pointer;
+}
+
+.small {
+  max-width: 350px !important;
 }
