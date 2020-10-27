@@ -1,0 +1,56 @@
+<svg id="Pin_2" data-name="Pin 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="47" viewBox="0 0 31 47">
+  <defs>
+    <style>
+      .cls-1, .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        filter: url(#filter-2);
+      }
+
+      .cls-3 {
+        fill-opacity: 0;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        stroke: #fff;
+        stroke-opacity: 0.8;
+        stroke-width: 2px;
+      }
+
+      .cls-5 {
+        fill: #a72f1e;
+      }
+    </style>
+    <filter id="filter" x="2931" y="554" width="18" height="31" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="2" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.236"/>
+      <feFlood result="flood" flood-opacity="0.5"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="5" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.449"/>
+      <feFlood result="flood" flood-opacity="0.5"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Pin">
+    <path id="Oval" class="cls-1" d="M2939.5,578c2.49,0,4.5-4.925,4.5-11s-2.01-11-4.5-11-4.5,4.925-4.5,11S2937.01,578,2939.5,578Z" transform="translate(-2924 -538)"/>
+    <g class="cls-2">
+      <rect id="Clip_4" data-name="Clip 4" class="cls-3" width="31" height="43"/>
+      <g id="Mask_by_Clip_4" data-name="Mask by Clip 4">
+        <path id="Fill_3" data-name="Fill 3" class="cls-4" d="M2952.65,555.2q0.06-.612.06-1.237a6.714,6.714,0,0,0-.04-0.8,13.338,13.338,0,0,0-26.63,0c-0.02.251-.04,0.512-0.04,0.795q0,0.624.06,1.235a13.073,13.073,0,0,0,.71,3.2c1.53,4.568,4.97,8.376,6.72,10.892,4.9,7.062,4.03,8.708,5.87,8.708s0.97-1.646,5.87-8.708c1.74-2.517,5.19-6.326,6.72-10.895a13.51,13.51,0,0,0,.7-3.194" transform="translate(-2924 -538)"/>
+      </g>
+    </g>
+    <path id="Fill_1" data-name="Fill 1" class="cls-5" d="M2945.5,554a6,6,0,1,1-6-6,6,6,0,0,1,6,6" transform="translate(-2924 -538)"/>
+  </g>
+</svg>
