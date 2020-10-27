@@ -39,7 +39,7 @@ mapItems.forEach(item => {
   const btn = item.querySelector('.card__btn')
 
   btn.addEventListener('click', (e) => {
-
+    document.body.classList.add('lock')
     mapItems.forEach(item => {
       const index = item.dataset.index
 
