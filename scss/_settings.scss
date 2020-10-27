@@ -97,6 +97,14 @@ h6 {
 	font-size: inherit;
 }
 
+body.lock {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
 .wrapper {
 	width: 100%;
 	min-height: 100%;

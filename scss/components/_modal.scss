@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../image/map.jpg') center/cover no-repeat;
+  background: url('../image/map-shops.png') center/cover no-repeat;
 
   &__close {
     top: 20px;
@@ -16,55 +16,64 @@
 
 .map-pins {
 
+
   &__item {
     max-width: 30px;
     width: 100%;
     position: absolute;
-    top: 49%;
-    left: 45%;
+    top: 24%;
+    left: 46%;
 
     &:nth-child(2) {
-      top: 48%;
-      left: 46%;
+      top: 51%;
+      left: 20%;
     }
 
     &:nth-child(3) {
-      top: 55%;
-      left: 47%;
-    }
-
-    &:nth-child(4) {
-      top: 59%;
-      left: 48%;
-    }
-
-    &:nth-child(5) {
-      top: 64%;
-      left: 48%;
-    }
-
-    &:nth-child(6) {
-      top: 72%;
-      left: 46%;
-    }
-
-    &:nth-child(7) {
-      top: 72%;
+      top: 26%;
       left: 44%;
     }
 
+    &:nth-child(4) {
+      top: 46%;
+      left: 36%;
+    }
+
+    &:nth-child(5) {
+      top: 69%;
+      left: 73%;
+    }
+
+    &:nth-child(6) {
+      top: 42%;
+      left: 37%;
+    }
+
+    &:nth-child(7) {
+      top: 63%;
+      left: 79%;
+    }
+
     &:nth-child(8) {
-      top: 80%;
-      left: 68%;
+      top: 50%;
+      left: 38%;
+    }
+
+    &:nth-child(9) {
+      top: 66%;
+      left: 74%;
     }
 
     img {
+      position: relative;
+      z-index: 1;
       cursor: pointer;
     }
   }
 
   &__card {
     position: absolute;
+    z-index: 3;
     bottom: 40px;
     left: 0;
     display: none;
@@ -74,9 +83,22 @@
     box-shadow: 0 10px 20px rgba(#000000, 0.6);
   }
 
+
+  &__close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: url('../image/cross.svg') center / 10px 10px no-repeat;
+    background-color: #fff;
+  }
+
   &__img {
     height: 125px;
-    background: url('../image/map-photo-shop.jpg') center no-repeat;
+    background: url('../image/photo-shop-modal.jpg') center no-repeat;
   }
 
   &__descr {
@@ -110,9 +132,15 @@
   display: block;
   max-width: 500px;
 }
+
 .map-pins__card.open {
   display: block;
 }
+
+.map-pins__card.hide {
+  display: none;
+}
+
 
 .modal-btn {
   position: absolute;
