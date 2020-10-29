@@ -273,6 +273,7 @@ function openInfoModal(array) {
 
           document.querySelector('.modal-info__btn')
             .addEventListener('click', () => {
+              document.body.classList.add('lock')
               mapItems.forEach(item => {
                 const index = item.dataset.index
           
