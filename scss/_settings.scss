@@ -116,6 +116,17 @@ body.lock {
 	padding: 0 100px;
 }
 
+
+.top {
+  padding-top: 35px;
+  padding-bottom: 22px;
+  text-align: center;
+
+  &__btn {
+    padding: 10px 40px 10px 50px;
+  }
+}
+
 .logo {
   display: inline-block;
 }

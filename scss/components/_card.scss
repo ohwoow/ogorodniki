@@ -23,6 +23,10 @@
     margin-right: 0;
   }
 
+  &_factory {
+    min-height: auto;
+  }
+
   @media (max-width: 1800px) {
     width: 70%;
   }
