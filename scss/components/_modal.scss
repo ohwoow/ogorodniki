@@ -361,37 +361,44 @@
 
 .map-pins__item_city {
   display: none;
+}
 
-  &:first-child {
-    top: 37%;
-    left: 30%;
+.map-pins__item_city.open {
+  display: block !important;
+}
+
+.map-pins__item_city {
+
+  &-1 {
+    top: 37% !important;
+    left: 30% !important;
 
     .map-pins__card .map-pins__img {
       background-image: url('../image/Вінниця.jpg');
     }
   }
 
-  &:nth-child(2) {
-    top: 48%;
-    left: 62%;
+  &-2 {
+    top: 48% !important;
+    left: 62% !important;
 
     .map-pins__card .map-pins__img {
       background-image: url('../image/Дніпро.jpg');
     }
   }
 
-  &:nth-child(3) {
-    top: 56%;
-    left: 62%;
+  &-3 {
+    top: 56% !important;
+    left: 62% !important;
 
     .map-pins__card .map-pins__img {
       background-image: url('../image/Запоріжжя.jpg');
     }
   }
 
-  &:nth-child(4) {
-    top: 20%;
-    left: 40%;
+  &-4 {
+    top: 20% !important;
+    left: 40% !important;
 
     .map-pins__card {
       bottom: -45px;
@@ -402,9 +409,9 @@
     }
   }
 
-  &:nth-child(5) {
-    top: 46%;
-    left: 82%;
+  &-5 {
+    top: 46% !important;
+    left: 82% !important;
 
     .map-pins__card {
       max-width: 352px;
@@ -416,49 +423,45 @@
     }
   }
 
-  &:nth-child(6) {
-    top: 67%;
-    left: 47%;
+  &-6 {
+    top: 67% !important;
+    left: 47% !important;
 
     .map-pins__card .map-pins__img {
       background-image: url('../image/Миколаїв.jpg');
     }
   }
 
-  &:nth-child(7) {
-    top: 73%;
-    left: 41%;
-
+  &-7 {
+    top: 73% !important;
+    left: 41% !important;
+ 
     .map-pins__card .map-pins__img {
       background-image: url('../image/Одеса.jpg');
     }
   }
 
-  &:nth-child(8) {
-    top: 32%;
-    left: 60%;
+  &-8 {
+    top: 32% !important;
+    left: 60% !important;
 
     .map-pins__card .map-pins__img {
       background-image: url('../image/Полтава.jpg');
     }
   }
 
-  &:nth-child(9) {
-    top: 17%;
-    left: 16%;
-
-    .map-pins__card {
-      bottom: -55px;
-    }
+  &-9 {
+    top: 35% !important;
+    left: 23% !important;
 
     .map-pins__card .map-pins__img {
-      background-image: url('../image/Полтава.jpg');
+      background-image: url('../image/хмельницький.jpg');
     }
   }
 
-  &:nth-child(10) {
-    top: 53%;
-    left: 75%;
+  &-10 {
+    top: 53% !important;
+    left: 75% !important;
 
     .map-pins__card {
       max-width: 370px;
@@ -466,13 +469,13 @@
     }
 
     .map-pins__card .map-pins__img {
-      background-image: url('../image/Полтава.jpg');
+      background-image: url('../image/донецьк.jpg');
     }
   }
 
-  &:nth-child(11) {
-    top: 12%;
-    left: 61%;
+  &-11 {
+    top: 14% !important;
+    left: 61% !important;
 
     .map-pins__card {
       bottom: -100px;
@@ -483,9 +486,9 @@
     }
   }
 
-  &:nth-child(12) {
-    top: 26%;
-    left: 68%;
+  &-12 {
+    top: 26% !important;
+    left: 68% !important;
 
     .map-pins__card {
       bottom: -20px;
@@ -497,31 +500,30 @@
     }
   }
 
-  &:nth-child(13) {
-    top: 72%;
-    left: 50%;
-
+  &-13 {
+    top: 72% !important;
+    left: 50% !important;
 
     .map-pins__card .map-pins__img {
       background-image: url('../image/Херсон.jpg');
     }
   }
 
-  &:nth-child(14) {
-    top: 34%;
-    left: 48%;
+  &-14 {
+    top: 34% !important;
+    left: 48% !important;
 
     .map-pins__card .map-pins__img {
       background-image: url('../image/Черкаси.jpg');
     }
   }
 
-  &:nth-child(15) {
-    top: 4%;
-    left: 44%;
+  &-15 {
+    top: 7% !important;
+    left: 44% !important;
 
     .map-pins__card {
-      bottom: -180px;
+      bottom: -140px !important;
     }
 
     .map-pins__card .map-pins__img {
@@ -529,12 +531,12 @@
     }
   }
 
-  &:nth-child(16) {
-    top: 17%;
-    left: 16%;
+  &-16 {
+    top: 19% !important;
+    left: 15% !important;
 
     .map-pins__card {
-      bottom: -100px;
+      bottom: -180px;
     }
 
     .map-pins__card .map-pins__img {
@@ -542,9 +544,9 @@
     }
   }
 
-  &:nth-child(17) {
-    top: 17%;
-    left: 20%;
+  &-17 {
+    top: 19% !important;
+    left: 20% !important;
 
     .map-pins__card {
       bottom: -100px;
@@ -555,80 +557,75 @@
     }
   }
 
-  &:nth-child(18) {
-    top: 93%;
-    left: 55%;
-
+  &-18 {
+    top: 93% !important;
+    left: 55% !important;
 
     .map-pins__card .map-pins__img {
       background-image: url('../image/севастополь.jpg');
     }
   }
 
-  &:nth-child(19) {
-    top: 87%;
-    left: 53%;
+  &-19 {
+    top: 87% !important;
+    left: 53% !important;
 
     .map-pins__card .map-pins__img {
       background-image: url('../image/Євпаторія.jpg');
     }
   }
 
-  &:nth-child(20) {
-    top: 91%;
-    left: 57%;
+  &-20 {
+    top: 91% !important;
+    left: 57% !important;
 
     .map-pins__card .map-pins__img {
       background-image: url('../image/Бахчисарай.jpg');
     }
   }
 
-  &:nth-child(21) {
-    top: 30%;
-    left: 9%;
+  &-21 {
+    top: 30% !important;
+    left: 9% !important;
 
     .map-pins__card .map-pins__img {
       background-image: url('../image/Львів.jpg');
     }
   }
 
-  &:nth-child(22) {
-    top: 41%;
-    left: 12%;
+  &-22 {
+    top: 41% !important;
+    left: 12% !important;
 
     .map-pins__card .map-pins__img {
       background-image: url('../image/Івано-франківськ.jpg');
     }
   }
 
-  &:nth-child(23) {
-    top: 33%;
-    left: 17%;
+  &-23 {
+    top: 33% !important;
+    left: 17% !important;
 
     .map-pins__card .map-pins__img {
       background-image: url('../image/Тернопіль.png');
     }
   }
 
-  &:nth-child(24) {
-    top: 48%;
-    left: 3%;
+  &-24 {
+    top: 48% !important;
+    left: 3% !important;
 
     .map-pins__card .map-pins__img {
       background-image: url('../image/Мукачево.jpg');
     }
   }
 
-  &:nth-child(25) {
-    top: 42%;
-    left: 3%;
+  &-25 {
+    top: 42% !important;
+    left: 3% !important;
 
     .map-pins__card .map-pins__img {
       background-image: url('../image/Ужгород.jpg');
     }
   }
-}
-
-.map-pins__item_city.open {
-  display: block !important;
 }
