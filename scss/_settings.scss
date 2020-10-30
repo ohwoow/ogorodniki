@@ -119,11 +119,12 @@ body.lock {
 
 .top {
   padding-top: 35px;
-  padding-bottom: 22px;
+	padding-bottom: 22px;
   text-align: center;
 
   &__btn {
-    padding: 10px 40px 10px 50px;
+		padding: 10px 40px 10px 50px;
+		margin-bottom: 25px;
   }
 }
 

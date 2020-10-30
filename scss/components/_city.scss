@@ -1,0 +1,14 @@
+.cards__year {
+  display: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &.active {
+    display: flex;
+  }
+}
+
+.cards__item_city {
+  min-height: 200px;
+}
+

@@ -7,13 +7,18 @@ const сardsItem = document.querySelectorAll('.cards__item')
 modalClose.addEventListener('click', (e) => {
   modalMap.classList.remove('open')
   document.body.classList.remove('lock')
+  mapItems.forEach(item => {
+    item.classList.remove('open')
+  })
 })
 
-modalOpen.addEventListener('click', (e) => {
-  e.preventDefault()
-  modalMap.classList.add('open')
-  document.body.classList.add('lock')
-})
+if (modalOpen) {
+  modalOpen.addEventListener('click', (e) => {
+    e.preventDefault()
+    modalMap.classList.add('open')
+    document.body.classList.add('lock')
+  })
+}
 
 mapItems.forEach(item => {
 
@@ -36,24 +41,31 @@ mapItems.forEach(item => {
   })
 })
 
-сardsItem.forEach((item, i) => {
-  const btn = item.querySelector('.card__btn')
+const modalFactory = document.querySelector('.modal-map_factory')
+const modalShop = document.querySelector('.modal-map_shop')
 
-  btn.addEventListener('click', (e) => {
-    document.body.classList.add('lock')
-    mapItems.forEach(item => {
-      const index = item.dataset.index
-
-      if (i + 1 == index) {
-        const card = item.querySelector('.map-pins__card')
-        modalMap.classList.add('open')
-        item.classList.add('open')
-        card.classList.add('open')
-      }
+if (modalFactory || modalShop) {
+  сardsItem.forEach((item, i) => {
+    const btn = item.querySelector('.card__btn')
+  
+    btn.addEventListener('click', (e) => {
+      document.body.classList.add('lock')
+      mapItems.forEach(item => {
+        const index = item.dataset.index
+  
+        if (i + 1 == index) {
+          const card = item.querySelector('.map-pins__card')
+          modalMap.classList.add('open')
+          item.classList.add('open')
+          card.classList.add('open')
+        }
+      })
+  
     })
-
   })
-})
+}
+
+
 
 const factoryInfo = [
   {
@@ -274,7 +286,6 @@ function openInfoModal(array) {
         </div>
       </div>
     `
-    
     cardLink.forEach((link, indexLink) => {
 
       link.addEventListener('click', (e) => {
@@ -321,4 +332,66 @@ if (modalInfoShops) {
   openInfoModal(shopsInfo)
 }
 
+const timelineItems = document.querySelectorAll('.timeline li')
+const cardsCity = document.querySelectorAll('.cards__year')
 
+if (timelineItems) {
+  
+  timelineItems.forEach(item => {
+    item.addEventListener('click', function() {
+
+      timelineItems.forEach(el => {
+        el.classList.remove('active')
+      })
+
+      const dataYear = this.dataset.year
+      this.classList.add('active')
+
+      cardsCity.forEach(city => {
+        const year = city.dataset.year
+        
+        if (year === dataYear) {
+          
+          cardsCity.forEach(city => {
+            city.classList.remove('active')
+          })
+
+          city.classList.add('active')
+        }
+
+       
+
+        if (year && dataYear === '1840') {
+          cardsCity[0].classList.add('active')
+        }
+      })
+    })
+  })
+
+}
+
+const cardsItemCity = document.querySelectorAll('.cards__item_city')
+
+if (cardsItemCity) {
+  cardsItemCity.forEach(card => {
+    const btn = card.querySelector('.card__btn')
+    let cardIndex = card.dataset.index
+    let cardYear = card.closest('.cards__year').dataset.year
+
+
+    btn.addEventListener('click', (e) => {
+      mapItems.forEach(item => {
+        let itemIndex = item.dataset.index
+        let itemYear = item.dataset.year
+
+        if (itemIndex === cardIndex && itemYear === cardYear) {
+          const mapCard = item.querySelector('.map-pins__card')
+          modalMap.classList.add('open')
+          item.classList.add('open')
+          mapCard.classList.add('open')
+        }
+      })
+
+    })
+  })
+}
