@@ -36,7 +36,8 @@ mapItems.forEach(item => {
     }
 
     if (item.offsetTop < 400) {
-      card.style.bottom = '-80px'
+      card.style.bottom = '-150px'
+      card.style.left = '50px'
     }
   })
 })
